@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 25, 2018, 4:14:35 AM
+    Author     : banana
+*/
+
+.btnCreate{
+    -fx-background-image: url('img/fast-forward.png');
+    -fx-background-size: 32 32;
+    -fx-background-color: transparent;
+}
+
+.btnPlay{
+    -fx-background-image: url('img/play-button.png');
+    -fx-background-size: 32 32;
+    -fx-background-color: transparent;
+}
+
+.btnPause{
+    -fx-background-image: url('img/pause.png');
+    -fx-background-size: 32 32;
+    -fx-background-color: transparent;
+}
+
+.btnStop{
+    -fx-background-image: url('img/stop.png');
+    -fx-background-size: 32 32;
+    -fx-background-color: transparent;
+}
+
+.btnReplay{
+    -fx-background-image: url('img/replay.png');
+    -fx-background-size: 32 32;
+    -fx-background-color: transparent;
+}
