@@ -101,12 +101,16 @@ public class Calculation {
     }
     
     public void stop(){
-        prePare.stop();
-        Play.stop();
+        if(prePare != null)
+            prePare.stop();
+        if(Play != null)
+            Play.stop();
     }
     
     public void pause(){
-        prePare.pause();
-        Play.pause();
+        if(prePare != null)
+            prePare.pause();
+        if(Play != null)
+            Play.pause();
     }
 }

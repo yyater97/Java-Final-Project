@@ -72,7 +72,7 @@ public class Matrix extends Pane{
         for(int i = 0; i<row; i++){
             for(int j = 0; j<col; j++){
                 Random rd = new Random();
-                arrElement[i][j].setText(rd.nextInt(50)+"");
+                arrElement[i][j].setText(rd.nextInt(10)+"");
             }
         }
     }

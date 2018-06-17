@@ -572,4 +572,26 @@ public class Determinant extends Calculation {
         st.play();
 
     }
+    
+     public void stop(){
+        if(prePare != null)
+            prePare.stop();
+        if(mainDiagonal != null)
+            mainDiagonal.stop();
+        if(antiDiagonal!=null)
+            antiDiagonal.stop();
+        if(cal != null)
+            cal.stop();
+    }
+    
+    public void pause(){
+        if(prePare != null)
+            prePare.pause();
+        if(mainDiagonal != null)
+            mainDiagonal.pause();
+        if(antiDiagonal!=null)
+            antiDiagonal.pause();
+        if(cal != null)
+            cal.pause();
+    }
 }

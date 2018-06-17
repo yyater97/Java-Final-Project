@@ -180,6 +180,18 @@ public class Summation extends Operator{
         Play.getKeyFrames().add(kf);
     }
     
+    public void hideLabelResultMatrix(double start){
+        KeyFrame kf = new KeyFrame(Duration.seconds(start), new EventHandler<ActionEvent>(){
+            
+            @Override
+            public void handle(ActionEvent event) {
+                mxr.fadeInLabelElement(count1, count2, 1);
+            }     
+        });
+        
+        Play.getKeyFrames().add(kf);
+    }
+    
     public void returnPos(double start){
         KeyFrame kf = new KeyFrame(Duration.seconds(start), new EventHandler<ActionEvent>(){
             

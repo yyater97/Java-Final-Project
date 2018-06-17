@@ -184,11 +184,11 @@ public class Multiplycation extends Operator {
             public void handle(ActionEvent event) {
                 mxr.translateLabelElement(count1, count2, 1.5, mxr.getX()- mxr.getPosElement_X(count1, count2) + (int)(count2*(mxr.getWidthElement()+mxr.getDis())), (int)(330*scale)-mxr.getPosElement_Y(count1, count2)+ count1*(int)(mxr.getWidthElement() + mxr.getDis()));
                 for (int k = 0; k < mx1.getCol(); k++) {  
-                mx1.translateElement(count1, k, 1.5, mx1.getX() - mx1.getPosElement_X(count1, count2) + (int) (count2 * (mx1.getWidthElement() + mx1.getDis())), (int) (330 * scale)-mx1.getPosElement_Y(count1, k) + count1*(int)(mx1.getWidthElement() + mx1.getDis()));
-                mx1.translateLabelElement(count1, k, 1.5, mx1.getX() - mx1.getPosElement_X(count1, count2) + (int) (count2 * (mx1.getWidthElement() + mx1.getDis())), (int) (330 * scale)-mx1.getPosElement_Y(count1, k)  + count1*(int)(mx1.getWidthElement() + mx1.getDis()));
+                mx1.translateElement(count1, k, 1.5, mx1.getX() - mx1.getPosElement_X(count1, 0) , (int) (330 * scale)-mx1.getPosElement_Y(count1, k) + count1*(int)(mx1.getWidthElement() + mx1.getDis()));
+                mx1.translateLabelElement(count1, k, 1.5, mx1.getX() - mx1.getPosElement_X(count1, 0), (int) (330 * scale)-mx1.getPosElement_Y(count1, k)  + count1*(int)(mx1.getWidthElement() + mx1.getDis()));
                 
-                mx2.translateElement(k, count2, 1.5, mx2.getX() - mx2.getPosElement_X(count1, count2) + (int) (count2 * (mx2.getWidthElement() + mx2.getDis())), (int) (330 * scale)-mx2.getPosElement_Y(k, count2)+k*(int)(mx2.getWidthElement() + mx2.getDis()));                
-                mx2.translateLabelElement(k, count2, 1.5, mx2.getX() - mx2.getPosElement_X(count1, count2) + (int) (count2 * (mx2.getWidthElement() + mx2.getDis())), (int) (330 * scale)-mx2.getPosElement_Y(k, count2)+k*(int)(mx2.getWidthElement() + mx2.getDis()));
+                mx2.translateElement(k, count2, 1.5, mx2.getX() - mx2.getPosElement_X(k, count2) + (int) (count2 * (mx2.getWidthElement() + mx2.getDis())), (int) (330 * scale)-mx2.getPosElement_Y(k, count2)+k*(int)(mx2.getWidthElement() + mx2.getDis()));                
+                mx2.translateLabelElement(k, count2, 1.5, mx2.getX() - mx2.getPosElement_X(k, count2) + (int) (count2 * (mx2.getWidthElement() + mx2.getDis())), (int) (330 * scale)-mx2.getPosElement_Y(k, count2)+k*(int)(mx2.getWidthElement() + mx2.getDis()));
                 }
                 mxr.translateElement(count1, count2, 1.5, mxr.getX() - mxr.getPosElement_X(count1, count2) + (int) (count2 * (mxr.getWidthElement() + mxr.getDis())), (int) (330 * scale)-mxr.getPosElement_Y(count1, count2)+ count1*(int)(mxr.getWidthElement() + mxr.getDis()));
             }

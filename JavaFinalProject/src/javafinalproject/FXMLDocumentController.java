@@ -72,7 +72,7 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         String[]list = {"Cộng ma trận","Trừ ma trận","Nhân ma trận","Tính định thức"};
         cbbCalculation.getItems().addAll(list);
-        cbbCalculation.getSelectionModel().select(3);
+        cbbCalculation.getSelectionModel().select(2);
         cbbCalculation_ItemSelectChanged();
     }
     
@@ -200,6 +200,7 @@ public class FXMLDocumentController implements Initializable {
                 break;
             }
             case "Tính định thức":{
+                det.pause();
                 break;
             }
         }
@@ -223,6 +224,7 @@ public class FXMLDocumentController implements Initializable {
                 break;
             }
             case "Tính định thức":{
+                det.stop();
                 break;
             }
         }
